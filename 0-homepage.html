@@ -5,14 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>holberton-smiling</title>
-  <!-- Custom and Font Styles  -->
+
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet" />
 
-  <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -30,14 +29,20 @@
   <header class="header">
     <div class="container">
       <nav class="navbar navbar-expand-sm pt-4 px-0">
-        <button >
-          <span class=""></span>
-          <span class=""></span>
-          <span class=""></span>
+        <button class="navbar__toggler border-0 align-self-start mt-3"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar__l1"></span>
+          <span class="navbar__l2"></span>
+          <span class="navbar__l3"></span>
         </button>
-        <a class="" href="#">
-          <img src="images/smile_off.png" alt="navbar-logo" width="37px" class="" />
-          <img src="images/logo.png" alt="navbar-logo-text" width="114px" class="" />
+        <a class="flex-md-row flex-sm-column" href="#">
+          <img class="mr-4 mb-3 mb-sm-0 mr-sm-3 img-fluid align-self-center" src="images/smile_off.png" alt="navbar-logo" width="37px"/>
+          <img class="mr-4 img-fluid align-se lf-center" src="images/logo.png" alt="navbar-logo-text" width="114px"/>
         </a>
         <div class="collapse navbar-collapse text-center mt-3" id="n  avbarNav">
           <ul class="navbar-nav ml-auto font-weight-bold">
@@ -54,40 +59,40 @@
         </div>
       </nav>
 
-      <section class="">
-        <h1 class="">Get schooled</h1>
-        <ul class="">
+      <section class="d-flex flex-column justify-content-center align-items-center mt-5 text-white">
+        <h1 class="title font-weight-bold mt-8">Get schooled</h1>
+        <ul class="list-unstyled d-flex flex-row justify-content-center py-4">
           <li class="">SMILES</li>
-          <li class="">GRIN</li>
+          <li class=" px-5">GRIN</li>
           <li class="">LAUGH</li>
         </ul>
-        <button class="btn btn-smile text-white ">
+        <button class="register__btn text-white ">
           REGISTER FOR FREE
         </button>
-        <p class="hero-learn font-weight-bold">
+        <p class="learn__pros font-weight-bold">
           <span>Learn</span> from the pros
         </p>
-        <div class="row">
-          <div class="">
-            <img src="images/profile_1.jpg" alt="profile 1" />
+        <div class="pro__container row">
+          <div class="pro__profile col-4 col-md-3">
+            <img src="images/profile_1.jpg" class="rounded-circle" alt="profile 1" />
             <h3>Phillip Massey</h3>
             <span>« Smile of the year »</span>
             <span>2018 - 2019</span>
           </div>
-          <div class="">
-            <img src="images/profile_2.jpg" alt="profile 2" />
+          <div class="pro__profile col-4 col-md-3">
+            <img src="images/profile_2.jpg" class="rounded-circle" alt="profile 2" />
             <h3>Nannie Lawrence</h3>
             <span>Best « little smile »</span>
             <span>2017</span>
           </div>
-          <div class="">
-            <img src="images/profile_3.jpg" alt="profile 3" />
+          <div class="pro__profile col-4 col-md-3">
+            <img src="images/profile_3.jpg" class="rounded-circle" alt="profile 3" />
             <h3>Bruce Walters</h3>
             <span>Best « Friend Smile »</span>
             <span>live performance 2019</span>
           </div>
-          <div class="">
-            <img src="images/profile_4.jpg" alt="profile 4" />
+          <div class="pro__profile col-4 col-md-3">
+            <img src="images/profile_4.jpg" class="rounded-circle" alt="profile 4" />
             <h3>Henry Hughes</h3>
             <span>« 24h smiles » winner</span>
             <span>2016 - 2019</span>
