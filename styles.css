@@ -158,6 +158,39 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "holberton_school-icon";
+  src: url("fonts/holberton_school-icon.eot?sq4eq4");
+  src: url("fonts/holberton_school-icon.eot?sq4eq4#iefix")
+      format("embedded-opentype"),
+    url("fonts/holberton_school-icon.ttf?sq4eq4") format("truetype"),
+    url("fonts/holberton_school-icon.woff?sq4eq4") format("woff"),
+    url("fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+[class^="icons__img"],
+[class*="icons__img"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "holberton_school-icon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 :root {
   --background-color: #071629;
   --main-color: #c271ff;
@@ -168,7 +201,7 @@ template {
   scroll-behavior: smooth;
 }
 .body {
-    font-family: var(--font-sans-pro);
+  font-family: var(--font-sans-pro);
 }
 .header {
   background-image: url("images/pic_1.jpg");
@@ -182,23 +215,23 @@ template {
 
 /** Navbar **/
 .header .navbar__l1 {
-    background-color: var(--color-white);
-    height: var(--nav-line-height);
-    width: 20px;
-    display: block;
-  }
-  .header .navbar__l2 {
-    background-color: var(--color-white);
-    height: var(--nav-line-height);
-    width: 13px;
-    display: block;
-  }
-  .header .navbar__l3 {
-    background-color: var(--color-white);
-    height: var(--nav-line-height);
-    width: 18px;
-    display: block;
-  }
+  background-color: var(--color-white);
+  height: var(--nav-line-height);
+  width: 20px;
+  display: block;
+}
+.header .navbar__l2 {
+  background-color: var(--color-white);
+  height: var(--nav-line-height);
+  width: 13px;
+  display: block;
+}
+.header .navbar__l3 {
+  background-color: var(--color-white);
+  height: var(--nav-line-height);
+  width: 18px;
+  display: block;
+}
 
 .title {
   font-style: normal;
@@ -207,6 +240,7 @@ template {
   text-align: center;
 }
 .register__btn {
+  color: var(--color-white);
   border-radius: 1.375rem;
   background-color: var(--main-color);
   font-size: 0.875rem;
@@ -260,4 +294,560 @@ template {
   font-size: 1rem;
   font-style: italic;
   line-height: 25px;
+}
+
+/*** 4. MAIN ***/
+
+/* Title
+============================= */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Carrousel
+============================= */
+
+.carousel-b {
+  background-color: #c271ff;
+  display: flex;
+  align-items: stretch;
+  padding: 5rem 0;
+}
+
+.testimonials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__container {
+  justify-content: center;
+}
+
+/* Carrousel
+============================= */
+
+.img-carousel {
+  height: 10rem;
+  border-radius: 12rem;
+}
+
+.quoute__txt,
+.quoute__title,
+.quoute__job {
+  color: var(--color-white);
+  font-family: var(--font-sans-pro);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.375rem;
+}
+
+.quoute__title {
+  font-weight: bold;
+}
+
+.quote_txtc {
+  width: 60%;
+}
+
+.prev-first {
+  opacity: 0;
+}
+
+.prev-first:hover {
+  visibility: visible;
+}
+
+/*** 5. MOST POPULAR VIDEOS  ***/
+
+.title-h2-videos {
+  font-family: var(--font-sans-pro);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+/* Media
+============================= */
+
+.mcard__video {
+  width: 15.938rem;
+  height: 9.625rem;
+  border-top: 2rem;
+}
+
+.mcard__starts {
+  height: 0.938rem;
+  width: 0.938rem;
+}
+
+.mcard__img {
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 12rem;
+}
+
+/* Text
+============================= */
+
+.mcard {
+  width: 16rem;
+}
+
+.mcard__title,
+.mcard_text,
+.mcard__name {
+  font-family: var(--font-sans-pro);
+}
+
+.mcard__title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.mcard_text {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.mcard__name,
+.mcard__time {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #c271ff;
+}
+
+.mcard_text {
+  opacity: 0.5;
+}
+
+.card {
+  border: 0;
+}
+
+.mcard__play {
+  position: relative;
+  height: 4rem;
+  width: 4rem;
+  top: -7rem;
+  left: 5.7rem;
+}
+
+.mcard__video {
+  box-sizing: border-box;
+  height: 9.625rem;
+}
+
+/*** 5. SMILES ***/
+
+/* Container
+============================= */
+
+.smiles {
+  background-color: #071629;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.smiles > h2 {
+  margin-top: 3em;
+}
+
+.smiles__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.smiles__wrap {
+  margin: 0 4em;
+}
+
+.smiles__contxt {
+  margin-top: 1em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 2em;
+}
+
+/* Text
+============================= */
+
+.smiles__title,
+.smiles__txt {
+  font-family: var(--font-sans-pro);
+  font-style: normal;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.smiles__title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: 1em;
+}
+
+.smiles__txt {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+/* Image
+============================= */
+
+.smiles__img {
+  height: 2.25rem;
+  width: 2.8125rem;
+}
+
+/** 6. Footer **/
+
+/* Container
+  ============================= */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  vertical-align: bottom;
+  background-color: #080013;
+}
+
+.markk {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 4em;
+  background-color: #080013;
+}
+
+.network {
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+
+/* Images
+  ============================= */
+
+.network__face::before {
+  content: "\e908";
+}
+
+.network__twi::before {
+  content: "\e90f";
+}
+
+.network__ig::before {
+  content: "\e90a";
+}
+
+.mark__img {
+  height: auto;
+  width: var(--width-logo-image);
+}
+
+.network__face--size {
+  color: var(--color-white);
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+/* Text
+  ============================= */
+
+.copyright__txt {
+  font-family: var(--font-sans-pro);
+  color: gray;
+}
+
+/* Decoration
+  ============================= */
+
+.network__face:hover,
+.network__twi:hover,
+.network__ig:hover {
+  opacity: 0.5;
+}
+
+.copyright__txt:hover {
+  text-decoration: underline;
+}
+
+/** PRICING **/
+
+/*** 1. HEADER ***/
+
+/* Container
+  ============================= */
+.header-pricing {
+  width: 100%;
+  background-image: url("images/pic_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  font-size: var(--font-sans-pro);
+}
+
+.icons__img--check::before {
+  content: "\e905";
+  font-size: 2rem;
+  color: #82d24f;
+}
+
+/* Table
+  ============================= */
+
+.table {
+  table-layout: fixed;
+  width: 80%;
+}
+
+.table--margin {
+  margin: 4rem 10rem;
+}
+
+.table td,
+.table {
+  padding: 1.5rem;
+  border-top: 0;
+  border-bottom: 1px solid gray;
+  vertical-align: middle;
+}
+
+th,
+.table thead th {
+  border: 0;
+}
+
+/*** 2. FAQ ***/
+
+/* Container
+  ============================= */
+
+.faq__container {
+  margin: 1rem 12rem;
+}
+
+.faq__question {
+  margin-top: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+}
+
+/** COURSES **/
+
+/** 1. HEADER **/
+
+/* Container
+  ============================= */
+
+.header-courses {
+  width: 100%;
+  background-image: url("images/pic_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  font-size: var(--font-sans-pro);
+}
+
+.phrase-title {
+  padding: 0 2rem 3rem 2rem;
+  flex-basis: 33rem;
+}
+
+/* Search filter
+  ============================= */
+
+.search {
+  background-color: #c271ff;
+  padding: 2rem;
+}
+
+.icons__img--search__logo::after {
+  content: "\e913";
+  color: var(--color-white);
+}
+
+.form-control:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+.input-group-text,
+.form-control,
+.mbn {
+  background-color: #d195ff;
+  border-color: #d195ff;
+  color: #e8caff;
+  font-family: var(--font-sans-pro);
+  font-weight: 300;
+  font-size: 1.4375rem;
+}
+
+.mbn,
+.input-group {
+  width: 100% !important;
+}
+
+/* Dropdown
+  ============================= */
+
+.mbn,
+.mbn:active,
+.mbn:hover,
+.mbn:focus,
+.mbn:focus-within,
+.mbn:visited {
+  background-color: #d195ff !important;
+  border-color: #d195ff !important;
+  border-bottom-color: white !important;
+  box-shadow: none !important;
+}
+
+.mbn,
+.search__title {
+  color: var(--color-white);
+}
+
+.search__title {
+  font-family: var(--font-sans-pro);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.dropdown-item:hover {
+  color: #d195ff;
+  background-color: transparent;
+}
+
+.results__container {
+  margin: 5rem;
+}
+
+@media (max-width: 576px) {
+  /*** 3. HEADER ***/
+
+  /* Title
+  ============================= */
+  .title {
+    font-size: 3.8125rem;
+  }
+
+  /* Container
+  ============================= */
+  .header {
+    background-position: -45em;
+  }
+
+  /* Nav
+  ============================= */
+  .navbar-nav {
+    margin-right: 0;
+  }
+
+  .nav-link:active {
+    opacity: 0.9;
+  }
+
+  .register__btn:active {
+    opacity: 0.9;
+  }
+
+  /* Pro
+    ============================= */
+  .pro__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*** 4. MAIN ***/
+  /* Carrousel
+  ============================= */
+
+  .img-carousel {
+    height: auto;
+    width: 10rem;
+  }
+
+  /*** 6. FOOTER ***/
+  /* Responsive
+  ============================= */
+  .markk {
+    flex-direction: column;
+  }
+
+  .network {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .table--margin {
+    margin: 0;
+  }
+
+  /*** 2-PRICING ***/
+
+  /* Container
+    ============================= */
+  .faq__container {
+    margin: 1rem 0;
+  }
+
+  /*** 3. HEADER ***/
+
+  .header-pricing {
+    background-position: -55rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /*** 3. HEADER ***/
+
+  /* Pro
+  ============================= */
+  .header {
+    background-position: -25em;
+  }
+
+  /*** 4. MAIN ***/
+  /* Carrousel
+  ============================= */
+
+  .img-carousel {
+    height: auto;
+    width: 10rem;
+  }
+
+  .navbar-nav {
+    margin-right: 0;
+  }
+
+  .table--margin {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .faq__container {
+    margin: 1rem 0;
+  }
+
+  .header-pricing {
+    background-position: -28em;
+  }
 }
